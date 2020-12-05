@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+    <Button
+        android:id="@+id/Health"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Health"
+        android:layout_margin="13dp"
+        android:background="#98BF64"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Hobbies"
+        app:layout_constraintEnd_toStartOf="@+id/Chores"/>
+
+
+    <Button
+        android:id="@+id/Hobbies"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Hobbies"
+        android:background="#1CA2DF"
+        android:layout_margin="13dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/Current"
+        app:layout_constraintEnd_toStartOf="@+id/School"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Health"
+        />
+    <Button
+        android:id="@+id/Current"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Current Activities"
+        android:layout_margin="13dp"
+        android:clickable="true"
+        android:background="#A4D2DA"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hobbies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Achievement"
+         />
+
+    <Button
+        android:id="@+id/Chores"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#DAD0C6"
+        android:layout_margin="13dp"
+        android:text="Chores"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@id/School"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Health"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/School"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#E4D2EA"
+        android:text="School Work"
+        android:clickable="true"
+        android:layout_margin="13dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/Achievement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Hobbies"
+        app:layout_constraintTop_toBottomOf="@+id/Chores"/>
+
+
+    <Button
+        android:id="@+id/Achievement"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Achievement"
+
+        android:layout_margin="13dp"
+        android:clickable="true"
+        android:background="#EAE0C6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/School"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Current"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
